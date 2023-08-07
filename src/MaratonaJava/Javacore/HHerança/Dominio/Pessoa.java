@@ -1,9 +1,28 @@
 package MaratonaJava.Javacore.HHerança.Dominio;
 
 public class Pessoa {
-    private String nome;
-    private String cpf;
-    private Endereco endereco;
+    protected String nome;
+    protected String cpf;
+    protected Endereco endereco;
+    static {
+        System.out.println("Dentro do bloco de inicialização estático de pessoa");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização não estático 1");
+    }
+    {
+        System.out.println("Dentro do bloco de inicialização não estático 2");
+    }
+
+    public Pessoa (String nome){
+        System.out.println("Dentro do construtor Pessoa");
+        this.nome = nome;
+    }
+
+    public Pessoa (String nome, String cpf){
+        this(nome);
+        this.cpf = cpf;
+    }
 
     public void imprime(){
         System.out.println(this.nome);

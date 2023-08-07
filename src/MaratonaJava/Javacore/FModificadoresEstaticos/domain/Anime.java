@@ -3,9 +3,9 @@ package MaratonaJava.Javacore.FModificadoresEstaticos.domain;
 public class Anime {
     private String nome;
     private static int[] episodios;
-    // 0 - bloco de inicialização é executado quando a jvm executar a classe
+    // 0 - bloco de inicialização estático é executado quando a jvm executar a classe
     // 1 - Alocado espaço em memória para o objeto
-    // 2 - Cada atributo de classe é criado iniciando com valores defautl ou o que for
+    // 2 - Cada atributo de classe é criado iniciando com valores default ou o que for
     // 3 - Bloco de inicialização é executado
     // 4 - Construtor é executado
 
