@@ -1,4 +1,4 @@
-package MaratonaJava.Javacore.Kenum.dominio;
+package MaratonaJava.Javacore.KEnum.dominio;
 
 public class Cliente {
     public enum tipoDePagamento{
